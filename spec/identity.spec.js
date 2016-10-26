@@ -1,6 +1,6 @@
 var chai=require('chai');
 var expect=chai.expect;
-var identity=require('../lib/identity');
+var identity=require('../lib/identity').identity;
 
 describe('identity',function(){
 
@@ -13,7 +13,7 @@ describe('identity',function(){
     it('it returns the argument pased to it', function(){
         expect(identity('input')).to.equal('input');
     })
-    it('it does not modify the argument pased to it', function(){
+    it('it does not modify the argument passed to it', function(){
         expect(typeof identity(1)).to.equal('number');
     })
     it('it does not create new objects', function(){
