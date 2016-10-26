@@ -1,18 +1,19 @@
 var chai=require('chai');
 var expect = chai.expect;
 var inc =require('../lib/inc.js').inc;
-var add =require('../lib/binFunc').add;
+
 //var identity=require('../lib/identity.js').identity
 
-describe('inc using add()',function() {
+describe('inc using addf()',function() {
     it('it is a func', function () {
-        expect(add).to.be.a('function');
+        expect(inc).to.be.a('function');
     });
-    it('inc(1,2) should equal add(1,2)', function () {
-        expect(inc(1,2)).to.equal(add(1,2));
+    it('inc(9)(1) should equal var i=9;++i', function () {
+        var i=9;
+        expect(inc(9)(1)).to.equal(++i);
     });
-    it('returns 3 for 1,2', function () {
-        expect(inc(1,2)).to.equal(3);
+    it('inc(3)(1) should equal 4', function () {
+        expect(inc(3)(1)).to.equal(4);
     });
 });
 
