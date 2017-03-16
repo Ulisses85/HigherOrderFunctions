@@ -1,13 +1,8 @@
-#Higher Order Fun
+#Higher Order Functions
 
 ## Goals
 
-1. Get completely comfortable with the concept of higher-order functions
-in JavaScript (functions that receive other functions as arguments and/or
-return other functions)
-2. Continue to use TDD to arrive at your implementations
-3. Prepare your minds for the many practical examples you'll see this pattern
-in the libraries we'll be using in this course
+1. Getting comfortable with higher order functions.
 
 ## Tasks
 
